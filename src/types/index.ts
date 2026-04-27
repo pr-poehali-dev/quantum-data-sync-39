@@ -7,8 +7,10 @@ export interface Section {
   content?: string
   showButton?: boolean
   buttonText?: string
+  isDailySpeech?: boolean
 }
 
 export interface SectionProps extends Section {
   isActive: boolean
+  onButtonClick?: () => void
 }
